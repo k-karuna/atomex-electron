@@ -16,9 +16,10 @@ async function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1100,
     height: 800,
-    icon: __dirname + 'icon.png',
+    icon: path.join(__dirname, 'icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      devTools: false,
     },
   });
 
