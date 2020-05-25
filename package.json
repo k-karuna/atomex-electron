@@ -18,11 +18,9 @@
     "linux": {
       "category": "atomex.category",
       "target": [
-        "deb",
-        "snap",
-        "rpm"
+        "deb"
       ],
-      "icon": "icon.png"
+      "icon": "images/icon1024.icns"
     }
   },
   "repository": "https://github.com/atomex-me",
