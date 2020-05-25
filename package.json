@@ -7,12 +7,22 @@
     "postinstall": "install-app-deps",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist:linux": "electron-builder --linux"
   },
   "build": {
     "appId": "com.ATOMEX.mac",
     "mac": {
-      "category": "your.app.category.type"
+      "category": "atomex.category"
+    },
+    "linux": {
+      "category": "atomex.category",
+      "target": [
+        "deb",
+        "snap",
+        "rpm"
+      ],
+      "icon": "icon.png"
     }
   },
   "repository": "https://github.com/atomex-me",
@@ -23,7 +33,8 @@
     "Crypto",
     "Wallet"
   ],
-  "author": "GitHub",
+  "author": "Konstantin <johnysalvesen@gmail.com>",
+  "homepage": "https://atomex.me",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^8.2.5",

@@ -23,7 +23,7 @@ async function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://wallet.test.atomex.me');
+  mainWindow.loadURL('https://wallet.atomex.me');
 
   // await loadURL(mainWindow);
 
